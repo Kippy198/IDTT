@@ -8,7 +8,7 @@
     padding-top: 50px;
     height: auto;
 }
-.news-list {
+.news-list.news-category {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
