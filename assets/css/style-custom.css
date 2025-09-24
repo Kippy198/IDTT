@@ -1,0 +1,64 @@
+.datepicker {
+    width: 100%;
+}
+
+.datepicker-view {
+    width: 100% !important;
+}
+
+.datepicker-header .datepicker-controls {
+    padding: 8px 12px 8px;
+    background-color: #325165;
+}
+
+.datepicker-header .datepicker-controls .button {
+    color: #fff;
+    font-size: 20px;
+    background-color: #325165;
+}
+
+.datepicker-header .datepicker-controls .button .prev-btn,
+.datepicker-header .datepicker-controls .button .next-btn {
+    font-size: 25px;
+    height: auto;
+    line-height: normal;
+    padding: 0;
+}
+
+.datepicker .dow {
+    height: auto;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.datepicker-cell {
+    padding: 10px 0;
+    height: auto;
+}
+
+.datepicker-header .datepicker-controls .button:hover {
+    background-color: #325165;
+}
+
+.time-picker-container .ts-dropdown [data-selectable].option {
+    font-size: 18px;
+}
+
+.time-picker-container .ts-dropdown .option,
+.ts-dropdown .optgroup-header,
+.ts-dropdown .no-results,
+.ts-dropdown .create {
+    padding: 10px 16px;
+}
+
+.ts-dropdown,
+.ts-control,
+.ts-control input {
+    font-size: 18px;
+}
+
+.time-picker-container .ts-dropdown .active {
+    color: #fff;
+    font-weight: 500;
+    background-color: #325165;
+}

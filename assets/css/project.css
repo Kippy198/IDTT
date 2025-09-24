@@ -1,0 +1,190 @@
+.project-wrapper{
+    padding: 60px 0px 80px;
+}
+.project-header{
+    margin-bottom: 60px;
+}
+.project-subtitle{
+    padding: 35px 0px 25px;
+}
+.project-subtitle{
+    padding-top: 35px;
+}
+@media only screen and (max-width: 1366px){
+    .project-wrapper{
+        padding: 40px 0px 70px;
+    }
+    .project-header{
+        margin-bottom: 40px;
+    }
+    .project-subtitle{
+        padding: 15px 0px 10px!important;
+    }
+}
+@media only screen and (max-width: 1023px){
+    .project-wrapper{
+        padding: 30px 0px 60px;
+    }
+    .project-header{
+        margin-bottom: 35px;
+    }
+    .project-subtitle{
+        padding: 10px 0px 10px!important;
+    }
+}
+@media only screen and (max-width: 739px){
+    .project-wrapper{
+        padding: 25px 0px 40px;
+    }
+    .project-header{
+        margin-bottom: 30px;
+    }
+}
+.project-swiper {
+  width: 100%;       
+  aspect-ratio: 1140 / 470; 
+  margin: 0 auto;           
+  overflow: hidden;
+  border-radius: 6px;       
+}
+.project-group .project-item + .project-item {
+  padding-top: 50px;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    object-position: top;
+    display: block;
+}
+
+@media only screen and (max-width:1023px){
+    .project-subtitle__text {
+        font-size: 22px;
+    }
+       .project-group .project-item + .project-item {
+        padding-top: 35px;
+    }
+}
+@media only screen and (max-width:739px){
+    .project-subtitle__text {
+        font-size: 18px;
+    }
+    .project-group .project-item + .project-item {
+        padding-top: 35px;
+    }
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.project-desc{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 1;
+    text-align: justify;
+     color: #012C2C;
+}
+.project-desc svg {
+margin-top: 2px;
+  font-size: 18px;  
+  flex-shrink: 0;    
+}
+.project-desc__label{
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: justify;
+    font-size: 16px;
+    color: #012C2C;
+}
+@media only screen and (max-width:1023px){
+    .project-desc,.project-desc__label{
+        font-size: 15px;
+    }
+    .project-info{
+        gap: 8px;
+    }
+}
+@media only screen and (max-width:739px){
+    .project-desc,.project-desc.spec p{
+        font-size: 14px;
+    }
+       .project-info{
+        gap: 6px;
+    }
+}
+.banner-pagination.project-pagination {
+    position: absolute;
+    bottom:-25%!important;
+    transform: translateX(-50%);
+    left: 50% !important;
+    justify-content: center;
+    gap: 35px;
+    width: auto !important;
+    flex-direction: row;
+}
+@media only screen and (max-width: 63.9375em) {
+  .banner-pagination.project-pagination .hide-on-bothTM {
+    display: none !important;
+  }
+ .banner-pagination.project-pagination {
+    display: none;
+  } 
+} 
+.banner-pagination .swiper-pagination-bullet {
+  --sizeDot: 10px;
+  position: relative;
+  width: var(--sizeDot);
+  height: var(--sizeDot);
+  min-height: var(--sizeDot);
+  opacity: 1;
+  margin: 10px 0px !important;
+  background-color: #fff;
+  transition: all 0.3s;
+  transition: margin 0.3s;
+}
+@media only screen and (max-width: 46.1875em) {
+  .banner-pagination .swiper-pagination-bullet {
+    --sizeDot: 8px;
+    margin: 6px 0px !important;
+  }
+}
+.banner-pagination .swiper-pagination-bullet::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  --sizeBorder: 40px;
+  width: var(--sizeBorder);
+  height: var(--sizeBorder);
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #f0ce90;
+  transition: opacity 0.3s visibility 0.3s;
+}
+@media only screen and (max-width: 46.1875em) {
+  .banner-pagination .swiper-pagination-bullet::after {
+    --sizeBorder: 30px;
+  }
+}
+.banner-pagination .swiper-pagination-bullet-active {
+  position: relative;
+  margin: 20px 0 !important;
+  background-color: #f0ce90;
+}
+@media only screen and (max-width: 46.1875em) {
+  .banner-pagination .swiper-pagination-bullet-active {
+    margin: 14px 0 !important;
+  }
+}
+.banner-pagination .swiper-pagination-bullet-active::after {
+  opacity: 1;
+  visibility: visible;
+} 
