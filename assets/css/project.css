@@ -59,7 +59,7 @@
 }
 
 @media only screen and (max-width:1023px){
-    .project-subtitle__text {
+    .project-subtitle__text.general-subtitle {
         font-size: 22px;
     }
        .project-group .project-item + .project-item {
@@ -67,8 +67,8 @@
     }
 }
 @media only screen and (max-width:739px){
-    .project-subtitle__text {
-        font-size: 18px;
+    .project-subtitle__text.project-subtitle__text {
+        font-size: 16px;
     }
     .project-group .project-item + .project-item {
         padding-top: 35px;
