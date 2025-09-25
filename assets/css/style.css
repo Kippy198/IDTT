@@ -4,6 +4,7 @@
 @import './news-category.css';
 @import './news-detail.css';
 @import './project.css';
+@import './color.css';
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
