@@ -41,8 +41,10 @@
   }
 }
 
-
-
+.project-banner{
+  width: 100%;
+  height: auto;
+}
 .project-group .project-item + .project-item {
   padding-top: 50px;
 }

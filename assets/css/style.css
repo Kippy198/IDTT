@@ -5,6 +5,8 @@
 @import './news-detail.css';
 @import './project.css';
 @import './color.css';
+@import './industrial.css';
+@import './introduction.css';
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -204,6 +206,7 @@ body {
   min-height: 100vh;
   color: #012c2c;
   --widthDefault: 1140px;
+  --widthCustom: calc((min(100vw, var(--widthDefault) + ((100vw - var(--widthDefault)) /2))));
 }
 @media only screen and (max-width: 46.1875em) {
   body {
@@ -240,7 +243,10 @@ body .container {
   max-width: var(--widthDefault);
   padding: 0 16px;
 }
-
+body .container-left__full {
+  max-width: var(--widthCustom);
+  padding: 0px 0px 0px 16px;
+}
 @keyframes fadeModal {
   0% {
     transform: translateX(110%);

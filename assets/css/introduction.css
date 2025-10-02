@@ -1,0 +1,371 @@
+.introduction-intro {
+    padding: 80px 0px 130px;
+}
+.introduction-intro__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.introduction-intro__text{
+    flex: 0 0 50%
+}
+.introduction-intro__text .general-name{
+    padding-bottom: 20px;
+}
+@media only screen and ( max-width:1023px){
+    .introduction-intro {
+        padding: 50px 0px 75px;
+    }
+    .introduction-intro__text .general-title.title-sort {
+        font-size: 28px;
+        text-align: center;
+    }
+    .introduction-intro__text .general-name{
+        font-size: 40px;
+    }
+    .introduction-intro__content{
+        flex-direction: column;
+    }
+}
+@media only screen and ( max-width:739px){
+    .introduction-intro {
+        padding: 35px 0px 60px;
+    }
+    .introduction-intro__text .general-title.title-sort {
+        font-size: 20px;
+        text-align: center;
+    }
+    .introduction-intro__text .general-name{
+        font-size: 30px;
+    }
+    .introduction-intro__content{
+        flex-direction: column;
+    }
+}
+/* info */
+.introduction-info{
+    padding: 109px 0px 60px;
+    color: #FFFFFF;
+}
+.introduction-info__title{
+    padding:0px 20px 209px 20px;
+}
+.introduction-info__title p{
+    font-weight: 700;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.introduction-info__title h1{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.4;
+}
+.introduction-info__about{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.introduction-info__left, .introduction-info__right{
+    flex: 0 0 50%;
+    position: relative;
+}
+.introduction-info__header{
+    padding: 0px 20px;
+}
+.introduction-info__left::before,.introduction-info__right::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 1px;
+    height: 120%;
+    background: linear-gradient(to bottom, #FFFFFF00 0%, #FFFFFF 100%);
+    z-index: 0;
+}
+.introduction-info__right::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(100% + 20px);
+    width: 1px;
+    height: 120%;
+    background: linear-gradient(to bottom, #FFFFFF00 0%, #FFFFFF 100%);
+}
+.general-subtitle.introduction {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.general-subtitle.introduction::after{
+    content: none;
+}
+.introduction-info__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+}
+@media only screen and ( max-width:1023px){
+    .introduction-info {
+        padding:75px 0px 45px ;
+    }
+    .introduction-info__title h1{
+        font-size: 34px;
+    }
+    .introduction-info__about {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .introduction-info__title.unseen{
+        display: none;
+    }
+    .introduction-info__left::before,.introduction-info__right::before,.introduction-info__right::after {
+        content: none;
+    }
+}
+@media only screen and ( max-width:739px){
+    .introduction-info {
+        padding:52px 0px 30px ;
+    }
+    .introduction-info__title h1{
+        font-size: 36px;
+    }
+    .introduction-info__about {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .introduction-info__title.unseen{
+        display: none;
+    }
+    .introduction-info__left::before,.introduction-info__right::before,.introduction-info__right::after {
+        content: none;
+    }
+}
+/* PROJECT */
+.introduction-project{
+    padding: 81px 0px 211px;
+}
+.introduction-project__list{
+    display: flex;
+    gap: 20px;
+}
+.introduction-project__item{
+    background: #fff;
+    padding: 30px 22px 35px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+}
+.introduction-project__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.introduction-project__header .general-title__text{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+}
+.general-subtitle.general-project{
+    font-weight: 700;
+    font-size: 16px!important;
+    line-height: 30px;
+    text-align: center;
+ 
+}
+.general-subtitle.general-project::after{
+    content: none;
+}
+.introduction-project__desc{
+    list-style-position: outside;
+    margin: 0;
+    padding-left: 20px;
+}
+.introduction-project__desc li{
+    list-style-type: disc !important;
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+@media only screen and ( max-width:1023px){
+    .introduction-project {
+        padding:60px 0px 120px ;
+    }
+    .introduction-project__list {
+        flex-direction: column;
+    }
+}
+@media only screen and ( max-width:739px){
+    .introduction-project {
+        padding:41px 0px 60px ;
+    }
+    .introduction-project__desc li {
+        font-size: 14px;
+    }
+    .introduction-project__list {
+        flex-direction: column;
+        
+    }
+    .introduction-project__item {
+        padding: 20px 11px 20px 11px;
+        gap: 10px;
+    }
+}
+/* Field */
+.introduction-field{
+    padding: 80px 0px;
+}
+.introduction-field__title{
+    padding-bottom: 50px;
+}
+.introduction-field__title .general-title.title-sort{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+.introduction-field__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* ví dụ 6 cột */
+    gap: 20px;
+}
+.introduction-field__item {
+    position: relative;
+    padding-top: 91%;
+    grid-column: span 1;
+}
+.introduction-field__item.picked{
+    position: relative;
+    grid-column: span 2;
+}
+.introduction-field__item  img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+@media only screen and ( max-width:1023px){
+    .introduction-field {
+        padding: 50px 0px;
+    }
+    .introduction-field__title .general-name{
+        font-size: 35px;
+    }
+    .introduction-field__title {
+        padding-bottom: 20px;
+    }
+    .introduction-field__list{
+        gap: 10px;
+    }
+    .introduction-field__item {
+        padding-top: 170%;
+    }
+}
+@media only screen and ( max-width:739px){
+    .introduction-field {
+        padding:40px 0px;
+    }
+    .introduction-field__title .general-name{
+        font-size: 30px;
+    }
+    .introduction-field__title {
+        padding-bottom: 20px;
+    }
+    .introduction-field__list{
+        gap: 10px;
+    }
+    .introduction-field__item {
+        padding-top: 170%;
+    }
+}
+/* BOARD */
+.introduction-diagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 90px 150px 90px 150px;
+
+}
+.introduction-diagram .general-title.title-sort{
+    text-align: center;
+    padding-bottom: 62px;
+}
+@media only screen and ( max-width:1023px){
+    .introduction-diagram{
+        padding: 46px 75px;
+    }
+    .introduction-diagram .general-title.title-sort {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+}
+@media only screen and ( max-width:739px){
+    .introduction-diagram{
+        padding: 30px 15px;
+    }
+    .introduction-diagram .general-title.title-sort {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
+/* Schedule */
+.introduction-schedule{
+    padding: 80px 0px;
+    position: relative;
+}
+.introduction-schedule__list{
+    display: flex;
+    gap: 20px;
+    padding: 50px 0px;
+   
+}
+.introduction-schedule__list .swiper-pagination {
+  bottom: 0;   
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.introduction-schedule__img{
+    position: relative;
+    padding-top: 54%;
+}
+.introduction-schedule__img img{
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+}
+@media only screen and ( max-width:1023px){
+    .introduction-schedule{
+        padding: 45px 0px;
+    }
+    .introduction-diagram .general-title.title-sort {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .introduction-schedule__list{
+        gap: 10px;
+        padding: 35px 0;
+    }
+    }
+@media only screen and ( max-width:739px){
+    .introduction-schedule{
+        padding: 30px 0px;
+    }
+    .introduction-diagram .general-title.title-sort {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .introduction-schedule__list{
+        gap: 10px;
+        padding-top: 25px;
+    }
+    }
